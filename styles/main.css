@@ -42,7 +42,8 @@ body {
 
 nav ul {
     gap: 40px;
-    font-size: 1.3em;
+    font-size: 1.3rem;
+    list-style: none;
 }
 
 nav li {
@@ -86,6 +87,17 @@ nav a:hover {
     font-size: 1.2em;
     color: #e2001a;
     letter-spacing: 1px;
+}
+.text-bereich img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+.titel {
+    font-size: 1.5em;
+    color: #e2001a;
+    font-weight: bold;
 }
 
 .text-bereich br {
