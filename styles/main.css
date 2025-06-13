@@ -96,6 +96,9 @@ nav a:hover {
 }
 
 .text-bereich {
+    font-size: 1rem;         /* Schriftgröße */
+    line-height: 1.7;        /* Zeilenabstand für bessere Lesbarkeit */
+    color: #222;             /* Textfarbe (dunkelgrau) */
     /* Optional: Listen für Titel schöner machen */
 }
 
