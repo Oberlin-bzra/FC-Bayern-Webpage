@@ -15,6 +15,13 @@
       <li><a href="/index.html">Home</a></li>
       <li><a href="/pages/Geschichte.html">Geschichte</a></li>
       <li><a href="/pages/Teams.html">Teams</a></li>
+      <li class="feedback-dropdown">
+      <a href="#" onclick="event.preventDefault(); document.querySelector('.dropdown-content').classList.toggle('show');">Feedback ▼</a>
+      <ul class="dropdown-content">
+        <li><a href="mailto:dogzombie111@gmail.com">An Felix Vogele</a></li>
+        <li><a href="mailto:Noel.Oberlin@bwz-rappi.ch">An Noel Oberlin</a></li>
+      </ul>
+    </li>
     </ul>
   </nav>
     </header>
@@ -64,6 +71,13 @@ Hier spielen die besten Teams aus allen Kontinenten gegeneinander an. Der FC Bay
  <br>
     </div>
   </div>
+  <script>
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.feedback-dropdown')) {
+    document.querySelectorAll('.dropdown-content').forEach(el => el.classList.remove('show'));
+  }
+});
+</script>
 </body>
 <footer class="footer">
     <p>&copy;FC Bayern München Fanpage Felix Vogele & Noel Oberlin</p>
