@@ -103,14 +103,14 @@ document.addEventListener('click', function(e) {
   }
 });
 
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header');
-    if (window.scrollY > 60) {
-        header.classList.add('shrink');
-    } else {
-        header.classList.remove('shrink');
-    }
-});
+let lastScrollY = window.scrollY; const header = document.querySelector("header");
+window.addEventListener('scroll', () => { 
+          if (window.scrollY > lastScrollY) 
+          {header.style.top = '-150px';}
+          else {
+                         header.style.top = '0';         
+          } 
+        lastScrollY = window.scrollY;});
 </script>
 </body>
 <footer class="footer">
