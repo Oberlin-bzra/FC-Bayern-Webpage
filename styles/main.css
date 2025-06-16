@@ -358,3 +358,28 @@ main.timeline::before {
         padding: 10px 2vw;
     }
 }
+
+/* Quellen-Links im Footer für .quellen */
+footer .Quellen {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    font-size: 0.95em;
+    opacity: 0.85;
+    list-style: none;
+    color: #ffffff;
+}
+
+footer .Quellen a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+footer .Quellen a:hover {
+    color: white;
+    text-decoration: none;
+}
