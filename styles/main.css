@@ -258,3 +258,42 @@ main.timeline::before {
 .timeline-item.right::before {
   left: -8px;
 }
+
+/* Sticky Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #DC052D;
+    padding: 40px 0;
+    transition: padding 0.3s, min-height 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+/* Logo im Header */
+.header .Logo {
+    height: 100px;
+    transition: height 0.3s;
+}
+
+/* Navigation Links */
+.header nav a {
+    font-size: 22px;
+    transition: font-size 0.3s;
+}
+
+/* Sticky Zustand */
+.header.shrink {
+    padding: 10px 0;
+}
+
+.header.shrink .Logo {
+    height: 60px;
+}
+
+.header.shrink nav a {
+    font-size: 16px;
+}
