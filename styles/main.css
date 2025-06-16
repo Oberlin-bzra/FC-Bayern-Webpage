@@ -25,6 +25,14 @@ body {
     justify-content: flex-start; /* statt space-between */
 }
 
+.bildquelle {
+  font-size: 0.8em;
+  color: #666;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
 .Logo {
     height: 140px; /* Optional: etwas kleiner */
     width: auto;
