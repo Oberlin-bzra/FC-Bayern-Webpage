@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', 'Roboto', 'Open Sans', 'Lato', 'Montserrat', Arial, sans-serif;
     background: #123b89;
     color: #333;
     height: 100%;
@@ -323,4 +323,38 @@ main.timeline::before {
 
 .team-table td p {
     margin: 6px 0;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .content {
+        padding: 18px 6vw;
+    }
+    .teams-layout {
+        flex-direction: column;
+    }
+    .teams-sidebar {
+        width: 100%;
+        margin-bottom: 24px;
+        border-radius: 12px 12px 0 0;
+        box-shadow: none;
+        position: static;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px 10px;
+    }
+    .Logo {
+        height: 60px;
+    }
+    nav ul {
+        gap: 12px;
+    }
+    .content {
+        padding: 10px 2vw;
+    }
 }
