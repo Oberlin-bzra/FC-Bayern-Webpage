@@ -297,3 +297,30 @@ main.timeline::before {
 .header.shrink nav a {
     font-size: 16px;
 }
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.team-table th, .team-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.team-table th {
+    background: #DC052D;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.team-table td p {
+    margin: 6px 0;
+}
