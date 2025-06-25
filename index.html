@@ -37,21 +37,40 @@
         Hier findest du alle Informationen über die Erfolge, die Geschichte und die Teams des FC Bayern München. Egal ob Herren, Frauen oder Jugend, wir haben alles für dich zusammengestellt.<br>
     </div>
   </div>
+
+
+
+  
 <script>
+// Wenn irgendwo auf die Seite geklickt wird …
 document.addEventListener('click', function(e) {
+  // … und das Ziel ist NICHT innerhalb eines Elements mit der Klasse 'feedback-dropdown' …
   if (!e.target.closest('.feedback-dropdown')) {
+    // … dann alle Dropdown-Menüs (mit Klasse 'dropdown-content') schliessen
     document.querySelectorAll('.dropdown-content').forEach(el => el.classList.remove('show'));
   }
 });
 
-let lastScrollY = window.scrollY; const header = document.querySelector("header");
+// Letzte bekannte Scroll-Position speichern
+let lastScrollY = window.scrollY;
+
+// Header-Element auswählen
+const header = document.querySelector("header");
+
+// Beim Scrollen ausführen:
 window.addEventListener('scroll', () => { 
-          if (window.scrollY > lastScrollY) 
-          {header.style.top = '-150px';}
-          else {
-                         header.style.top = '0';         
-          } 
-        lastScrollY = window.scrollY;});
+  // Wenn nach unten gescrollt wird …
+  if (window.scrollY > lastScrollY) {
+    // … dann den Header nach oben ausblenden
+    header.style.top = '-150px';
+  } else {
+    // … sonst (wenn nach oben gescrollt wird) Header wieder einblenden
+    header.style.top = '0';
+  }
+
+  // Aktuelle Scroll-Position merken
+  lastScrollY = window.scrollY;
+});
 </script>
 </body>
 <footer class="footer">
