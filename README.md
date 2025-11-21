@@ -17,6 +17,8 @@ Schulprojekt: Statische Webpage über den Fußballverein **FC Bayern München** 
    ```bash
    git clone https://github.com/Oberlin-bzra/FC-Bayern-Webpage.git
 index.html im Browser öffnen
+Oder live ansehen: [FC Bayern Fanpage](https://fcbayern-fanpage.netlify.app)
+
 
 Autoren
 Noel Oberlin und Felix Vogele
