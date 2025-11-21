@@ -19,9 +19,7 @@ Schulprojekt: Statische Webpage über den Fußballverein **FC Bayern München** 
 index.html im Browser öffnen
 
 Autoren
-Noel Oberlin
-
-Felix Vogele
+Noel Oberlin und Felix Vogele
 
 Lizenz / Copyright
 © 2025 Noel Oberlin & Felix Vogele. Alle Rechte vorbehalten.
